@@ -1,1 +1,9 @@
-﻿  SFML-test.vcxproj -> C:\Users\marek\Desktop\graCPPsfml\x64\Debug\SFML-test.exe
+﻿  main.cpp
+C:\Users\marek\Desktop\graCPPsfml\SFML-3.0.0-windows-vc17-64-bit\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: interfejs niebędący interfejsem dll class "std::runtime_error"użyto jako podstawowego dla interfejsu biblioteki dll class "sf::Exception"
+  (kompilowanie pliku źródłowego „main.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\stdexcept(100,19):
+  zobacz deklarację „std::runtime_error”
+  C:\Users\marek\Desktop\graCPPsfml\SFML-3.0.0-windows-vc17-64-bit\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+  zobacz deklarację „sf::Exception”
+  
+  SFML-test.vcxproj -> C:\Users\marek\Desktop\graCPPsfml\x64\Debug\SFML-test.exe
