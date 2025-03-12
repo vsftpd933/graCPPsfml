@@ -11,7 +11,10 @@ int main()
     Game game;
     std::vector<Unit*> units;
 
-    sf::RenderWindow window(sf::VideoMode({ 800, 800 }), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode({ 1920, 1080}), "GRA");
+
+    sf::Texture background("background.png");
+    sf::Sprite bg(background);
 
     while (window.isOpen())
     {
@@ -30,21 +33,23 @@ int main()
                 if (keyPressed->scancode == sf::Keyboard::Scancode::Space)
                 {
                     units.push_back(new Caveman1());
-                    units[units.size() - 1]->getSprite()->setPosition(sf::Vector2f(0.f, 500.f));
+                    units[units.size() - 1]->getSprite()->setPosition(sf::Vector2f(0.f, 650.f));
                 }
             }
             
         }
 
-        
         // Clear and draw
       
-        window.clear();
+        //background
+        window.draw(bg);
+        
+        //window.clear();  //background clears
+
         for (int i = 0; i < units.size(); i++)
         {
             //walking
-            units[i]->walk(game.deltaTime);
-
+            units[i]->walk(game.deltaTime, game.elapsedTime);
 
             window.draw(*units[i]->getSprite());
         }
