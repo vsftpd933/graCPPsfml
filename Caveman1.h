@@ -9,7 +9,7 @@ class Caveman1 :
 {
 public:
     Caveman1();
-    void walk(sf::Time deltaTime, sf::Time elapsedTime);
+    void walk(sf::Time deltaTime);
     void attack();
 
     double walkingSpeed=70.0;

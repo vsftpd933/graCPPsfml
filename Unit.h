@@ -7,7 +7,7 @@ class Unit
 public:
 
 	virtual void attack()=0;
-	virtual void walk(sf::Time deltaTime, sf::Time elapsedTime) = 0;
+	virtual void walk(sf::Time deltaTime) = 0;
 	virtual sf::Sprite* getSprite()=0;
 
 	int hp;

@@ -49,7 +49,7 @@ int main()
         for (int i = 0; i < units.size(); i++)
         {
             //walking
-            units[i]->walk(game.deltaTime, game.elapsedTime);
+            units[i]->walk(game.deltaTime);
 
             window.draw(*units[i]->getSprite());
         }
